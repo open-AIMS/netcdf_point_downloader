@@ -2,7 +2,7 @@
 # test they correspond to.
 options(warn = 1)
 
-source('netcdf_points_downloader.R')
+source('../netcdf_points_downloader.R')
 
 capture_warnings_and_run <- function(expr) {
   warnings <- NULL
@@ -66,7 +66,7 @@ if (TESTS_TO_RUN[1]) {
   # Wrapping the function call in a tryCatch to catch the specific error
   result <- tryCatch({
     netcdf_points_downloader(var_names = c("botz", "eta"), 
-                              input_data_src = "tests/test-locations.csv", 
+                              input_data_src = "test-locations.csv", 
                               download_data_src_url_template, 
                               output_csv_path = "temp/test-1.csv", 
                               verbosity = 0)
@@ -92,7 +92,7 @@ if (TESTS_TO_RUN[2]) {
   cat("Test 2: 12 points, from CSV, no date time, just botz.\n")
   output_csv_path = "temp/test-2.csv"
   ereefs_data <- netcdf_points_downloader(var_names = c("botz"), 
-                              input_data_src = "tests/test-locations.csv", 
+                              input_data_src = "test-locations.csv", 
                               download_data_src_url_template, 
                               output_csv_path, 
                               verbosity = 2,
@@ -151,7 +151,7 @@ if (TESTS_TO_RUN[3]) {
   output_csv_path = "temp/test-3.csv"
   result <- tryCatch({
     netcdf_points_downloader(var_names = c("foobar"), 
-                              input_data_src = "tests/test-locations.csv", 
+                              input_data_src = "test-locations.csv", 
                               download_data_src_url_template, 
                               output_csv_path, 
                               verbosity = 0,
@@ -180,7 +180,7 @@ if (TESTS_TO_RUN[4]) {
   cat("Test 4: request multiple variables against AIMS regular grid\n")
   download_data_src_url_template <- "https://thredds.ereefs.aims.gov.au/thredds/dodsC/gbr1_2.0/daily.nc"
   output_csv_path = "temp/test-4.csv"
-  input_df <- read.csv("tests/test-locations.csv", stringsAsFactors = FALSE)
+  input_df <- read.csv("test-locations.csv", stringsAsFactors = FALSE)
   input_df$datetime <- "2022/06/12 10:00"
   input_df$depth <- -2
   ereefs_data <- netcdf_points_downloader(var_names = c("temp", "eta"), 
@@ -210,7 +210,7 @@ if (TESTS_TO_RUN[5]) {
   #download_data_src_url_template = 'https://dapds00.nci.org.au/thredds/dodsC/fx3/model_data/gbr1_2.0.ncml'
   #download_data_src_url_template <- 'https://dapds00.nci.org.au/thredds/dodsC/fx3/model_data/gbr4_2.0.ncml'
   output_csv_path = "temp/test-5.csv"
-  input_df <- read.csv("tests/test-locations.csv", stringsAsFactors = FALSE)
+  input_df <- read.csv("test-locations.csv", stringsAsFactors = FALSE)
   input_df$datetime <- "2022/06/12 10:00"
   input_df$depth <- -2
 
