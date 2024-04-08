@@ -110,9 +110,10 @@ This will fetch the specified `var_names` from the NetCDF data source and append
 
 There are additonal more extensive examples in the `examples` folder.
 
-# Weather station example
-
-![examples/weather-station-davies-rf/weather-st-davies-vs-ereefs-vs-barra2-wind.png](Plot of the wind speed from the weather station, eReefs and the BARRA2 models.)
+- `examples/weather-station-davies-rf`: 
+This example shows downloading multiple datasets to compare with the AIMS weather station at Davies reef. 
+- `examples/dugong-sightings`: This example shows downloading points that are distributed across location and time. The goal is to determine the tide values corresponding to observations of Dugongs, noting that this example uses synthetic data of Dugongs.
+- `examples/tides`: This is a comparison between the tide gauge at Townsville and the GBR1 Hydro v2.0 eReefs model. This test highlights the close alignment of the eReefs models. It was also made to verify that the time zones were being handled correctly in the code.
 
 
 ## License
