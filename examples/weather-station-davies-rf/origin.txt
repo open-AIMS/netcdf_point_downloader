@@ -1,0 +1,11 @@
+2024-03-28 Eric Lawrey
+This data was downloaded from the AIMS Time Series Explorer and saved as AIMS_Time-Series_Davies-Rf_export.csv
+https://apps.aims.gov.au/ts-explorer/?series_id=65,73&fromDate=2022-12-15T00:00:00&thruDate=2022-12-31T00:00:00
+
+https://apps.aims.gov.au/ts-explorer/?series_id=65,73&fromDate=2020-01-01T18:00:00&thruDate=2020-03-01T00:00:00&source=65:Weather%20station,73:Weather%20station,64:Weather%20station
+
+Exported as CSV: 567689ec-e084-4a0f-98d2-2045ade51d85.zip
+
+Davies Reef Weather Station Water Temperature @4m
+Davies Reef Weather Station Wind Speed (Scalar avg 10 min)
+Davies Reef Weather Station Air Temperature

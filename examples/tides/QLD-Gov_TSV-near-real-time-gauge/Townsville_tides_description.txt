@@ -1,0 +1,52 @@
+====== Townsville Berth 1 Pumphouse Tide Gauge Near Real Time Recordings =======
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+The data file contains raw, unvalidated tidal height readings made by an 
+automatic tide gauge.
+
+
+--------------------------------------------------------------------------------
+The data section of the file is formatted in five columns separated by 
+whitespace. 
+
+Other data that may be contained in the file include the first five rows which 
+contain a small amount of metadata, as well as invalid data at the end. For 
+example ".000" and "0". These lines can be ignored.
+
+The first column is the datetime in the following format: 'DDMMYYYYhhmm'. 
+  'DD' is the day of the month as a two digit integer
+  'MM' is the month of the year as a two digit integer
+  'YYYY' is the year as a four digit integer
+  'hh' is the hour of the day (using 24 hour time) as a two digit integer 
+  'mm' is the minute of the hour as a two digit integer.  
+
+The second column is the water level reading in metres in the following 
+format: 'si.fff'. 
+  's' is a prefix indicating if the reading is positive or negative
+    positive readings are denoted by a space ' '
+    negative readings are denoted by a dash '-'.
+  'i.fff' is the height of the recording in metres
+
+The third to fifth columns are not used and should be disregarded.
+
+For example, the line '190120380314  3.142  0.000   0.00  0.000' would refer to 
+a height of 3.142 metres recorded at 03:14am on the 19th of January 2038.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Tidal Station Number,100447
+Tidal Station Name,Townsville Berth 1 Pumphouse
+Latitude Degrees,-19
+Latitude Minutes,15
+Longitude Degrees,146
+Longitude Minutes,50
+Time Zone,UTC+10 (AEST)
+Owner of readings,Queensland Government
+Data Type,Observation
+Station Datum,Lowest Astronomical Tide (LAT)
+Benchmark Description,PSM 10011
+Elevation of Benchmark relative to Station Datum (metres),9.025
+Readings are referred to,Lowest Astronomical Tide Datum
+Readings are the following height (metres) above Station Datum,0.000
+Australian Height Datum (AHD) level (metres) relative to station datum,1.856
+================================================================================

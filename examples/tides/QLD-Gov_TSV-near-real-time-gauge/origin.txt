@@ -1,0 +1,4 @@
+https://www.data.qld.gov.au/dataset/townsville-tide-gauge-near-real-time-tide-readings/resource/c3347a49-9760-4dbf-b945-25c5138fdd8a?truncate=30&inner_span=True
+
+Downloaded 7:30 pm 2021-08-20
+The last 15 rows of the file contained spurious data. These were manually removed.
