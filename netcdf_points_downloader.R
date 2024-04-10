@@ -16,6 +16,7 @@
 # 1.0   2024-04-08  Initial release.
 
 library(ncdf4)
+library(tools)
 
 # This script uses a data structure to keep track of the downloading of the data.
 # Parts of this structure are persisted to disk so that the scripts can be resumed
