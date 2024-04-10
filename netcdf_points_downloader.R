@@ -1515,7 +1515,7 @@ identify_datetime_format <- function(datetime_samples, datetime_formats) {
 #'        being downloaded. It will also accept variations with these names; it will automatically
 #'        match names against a preset number of acceptable variations, or they can be
 #'        manually specified with the lat_column, lon_column, etc. input parameters.
-#'        This input can have extra data columns. They will be propogated to the output.
+#'        This input can have extra data columns. They will be propagated to the output.
 #'        The generated output will correspond to this input, plus the extra data that is
 #'        downloaded from the input_data_src.
 #' @param download_data_src_url_template string - URL of the data source to download from. This can be
@@ -1551,7 +1551,7 @@ identify_datetime_format <- function(datetime_samples, datetime_formats) {
 #' @param download_rate_limit_delay - numeric: number of seconds pause between requests
 #'          sent to the server. Setting this to 0 will make the download as fast as 
 #'          possible, at the expense of potentially heavily loading the server that the
-#'          data is being loaded from. Having a small detail ensures that we don't 
+#'          data is being loaded from. Having a small delay ensures that we don't 
 #'          hog the server, or overload it. (default is 0.1 sec).
 #' @param stop_on_error boolean: If TRUE then an error during the download will stop
 #'          the application. If FALSE then a message will be reported and the variable
